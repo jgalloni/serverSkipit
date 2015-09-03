@@ -11,15 +11,17 @@
     <title></title>
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #ffe214">
+  <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-      <div class="navbar-header page-scroll">
-        <a class="navbar-brand">Skip-it</a>
-      </div>
-      <div class="navbar-brand left">
-        ${usuario}
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Skip-it</a>
       </div>
     </div>
-  </nav>
+  </div>
 </body>
 </html>

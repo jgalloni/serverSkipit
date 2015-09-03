@@ -1,9 +1,18 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <head>
-	<title>Skip-It</title>
+	<title>Test</title>
 </head>
 <body>
-	<jsp:include page="cabecera.jsp"></jsp:include>
+<h2>Login</h2>
+<form:form action="/logear" modelAttribute="usuario" method="post">
+	<form:label path="nombre">Nombre:</form:label>
+	<form:input path="nombre" type="text"/>
+	<br>
+	<form:label path="pass">Password:</form:label>
+	<form:password path="pass"/>
+	<br>
+	<input type="submit" value="Submit"/>
+</form:form>
 </body>
 </html>
