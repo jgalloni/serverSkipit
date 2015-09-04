@@ -17,8 +17,8 @@ public class HelloController {
 	}
 
 	@RequestMapping(value = "logear", method = RequestMethod.POST)
-	public String Logear(@ModelAttribute("usuario") Usuario usuario,ModelMap model){
+	public Usuario Logear(@ModelAttribute("usuario") Usuario usuario,ModelMap model){
 		model.addAttribute("usuario", usuario);
-		return "saludar";
+		return usuario;
 	}
 }
