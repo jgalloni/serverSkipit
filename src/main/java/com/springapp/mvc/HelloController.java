@@ -5,6 +5,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/")
@@ -17,7 +18,8 @@ public class HelloController {
 	}
 
 	@RequestMapping(value = "logear", method = RequestMethod.POST)
-	public Usuario Logear(@ModelAttribute("usuario") Usuario usuario,ModelMap model){
+	public @ResponseBody
+	Usuario Logear(@ModelAttribute("usuario") Usuario usuario,ModelMap model){
 		model.addAttribute("usuario", usuario);
 		return usuario;
 	}
