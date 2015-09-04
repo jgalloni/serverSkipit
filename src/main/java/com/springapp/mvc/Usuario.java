@@ -1,9 +1,11 @@
 package com.springapp.mvc;
 
+import java.io.Serializable;
+
 /**
  * Created by coco on 02/09/2015.
  */
-public class Usuario {
+public class Usuario implements Serializable {
     private String nombre;
     private String pass;
 
