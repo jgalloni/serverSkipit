@@ -19,9 +19,7 @@ public class HelloController {
 
 
 	@RequestMapping(value = "logear", method = RequestMethod.POST,
-			produces = MediaType.APPLICATION_JSON_VALUE,
-			consumes = MediaType.APPLICATION_JSON_VALUE,
-			headers="Content-Type=application/json")
+			produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody
 	Usuario Logear(@ModelAttribute("usuario") Usuario usuario,ModelMap model){
 		model.addAttribute("usuario", usuario);
