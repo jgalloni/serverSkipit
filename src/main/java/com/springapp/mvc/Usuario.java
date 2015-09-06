@@ -11,11 +11,8 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo.As;
  * Created by coco on 02/09/2015.
  */
 
-@JsonTypeInfo(use = JsonTypeInfo.Id.MINIMAL_CLASS, include = As.PROPERTY, property = "@class")
 public class Usuario{
-    @JsonProperty("nobmre")
     private String nombre;
-    @JsonProperty("pass")
     private String pass;
 
     public String getNombre() {
