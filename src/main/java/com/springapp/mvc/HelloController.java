@@ -17,7 +17,7 @@ public class HelloController {
 	}
 
 
-	@RequestMapping(value = "logear", method = RequestMethod.POST,produces = "application/json")
+	@RequestMapping(value = "logear", method = RequestMethod.POST,produces = "application/json",headers = {"Accept=text/xml, application/json"})
 	public @ResponseBody
 	Usuario Logear(@ModelAttribute("usuario") Usuario usuario,ModelMap model){
 		model.addAttribute("usuario", usuario);
